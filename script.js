@@ -55,3 +55,15 @@ let click = (color) => {
         checkOrder();
     })
 }
+
+let createColorElement = (color) => {
+    if (color == 0) {
+        return verde;
+    } else if (color == 1) {
+        return vermelho;
+    } else if (color == 2) {
+        return amarelo;
+    } else if (color == 3) {
+        return azul;
+    }
+}
