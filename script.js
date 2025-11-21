@@ -53,7 +53,7 @@ let click = (color) => {
     setTimeout(() => {
         createColorElement(color).classList.remove('selected');
         checkOrder();
-    })
+    }, 250)
 }
 
 let createColorElement = (color) => {
@@ -79,4 +79,11 @@ let gameOver = () => {
     clickedOrder = [];
 
     playGame();
+}
+
+let playGame = () => {
+    alert('Bem-vindo ao Genius! Iniciando novo jogo!');
+    score = 0;
+
+    nextLevel();
 }
