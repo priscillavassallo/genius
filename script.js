@@ -67,3 +67,8 @@ let createColorElement = (color) => {
         return azul;
     }
 }
+
+let nextLevel = () => {
+    score++;
+    shuffleOrder();
+}
