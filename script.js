@@ -72,3 +72,11 @@ let nextLevel = () => {
     score++;
     shuffleOrder();
 }
+
+let gameOver = () => {
+    alert('Pontuação: ${score}!\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo');
+    order = [];
+    clickedOrder = [];
+
+    playGame();
+}
