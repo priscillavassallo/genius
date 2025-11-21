@@ -87,3 +87,8 @@ let playGame = () => {
 
     nextLevel();
 }
+
+verde.onclick = () => click(0);
+vermelho.onclick = () => click(1);
+amarelo.onclick = () => click(2);
+azul.onclick = () => click(3);
