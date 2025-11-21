@@ -12,3 +12,14 @@ const vermelho = document.querySelector('.vermelho');
 const amarelo = document.querySelector('.amarelo');
 const azul = document.querySelector('.azul');
 
+let shuffleOrder = () => {
+    let colorOrder = Math.floor(Math.random() * 4);
+    order[order.lenght] = colorOrder;
+    clickedOrder = [];
+
+    for(let i in order) {
+        let elementColor = createColorElement(order[i]);
+        lightColor(elementColor, Number(i) + 1);
+    }
+}
+
