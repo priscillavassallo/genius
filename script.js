@@ -33,3 +33,15 @@ let lightColor = (element, number) => {
     });
 }
 
+let checkOrder = () => {
+    for(let i in clickedOrder) {
+        if(clickedOrder[i] != order[i]) {
+            gameOver();
+            break;
+        }
+    }
+    if(clickedOrder.length == order.length) {
+        alert('Pontuação: ${score}\nVocê acertou! Iniciando próximo nível!');
+        nextLevel();
+    }
+}
